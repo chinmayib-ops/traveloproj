@@ -73,6 +73,7 @@ export default function HotelDetailsPage() {
             rating: 4.5,
             amenities: ["Free WiFi", "Breakfast", "Pool"],
             reviews: [],
+            elo_rating: Math.floor(Math.random() * 500) + 1200, 
           })
           setLoading(false)
           return
@@ -88,6 +89,7 @@ export default function HotelDetailsPage() {
             location: "Unknown",
             price: "0",
             amenities: [],
+            elo_rating: Math.floor(Math.random() * 500) + 1200, // Random Elo between 1200-1700
             reviews: [],
           })
         } else {
@@ -222,16 +224,15 @@ export default function HotelDetailsPage() {
               <h1 className="text-3xl font-bold">{hotel.name}</h1>
               <div className="flex items-center justify-center mt-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mr-1" />
-                <span>{hotel.location}</span>
+                Elo Rating: <span className="font-bold">{Math.floor(Math.random() * 500) + 1200}</span>
               </div>
-              {hotel.rating && (
-                <div className="flex items-center bg-yellow-50 px-3 py-1.5 rounded-full shadow-sm mx-auto">
-                  <Star className="h-5 w-5 text-yellow-500 mr-1.5" />
-                  <span className="font-medium text-lg">
-                    {hotel.rating.toFixed(1)}
-                  </span>
+              {hotel.elo_rating && (
+                <div className="flex items-center justify-center gap-2">
+                  <div className="text-sm font-medium bg-blue-50 px-3 py-1 rounded-full">
+                    Elo Rating: <span className="font-bold">{Math.floor(Math.random() * 500) + 1200}</span>
+                  </div>
                 </div>
-              )}
+              )}              
             </div>
 
             <Tabs defaultValue="details" className="mt-6">

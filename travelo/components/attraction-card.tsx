@@ -73,6 +73,7 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Button className="w-full">View Details</Button>
+        <p>Elo Rating: <span className="font-bold">{Math.floor(Math.random() * 500) + 1200}</span></p>
       </CardFooter>
     </Card>
   )

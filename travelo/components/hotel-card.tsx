@@ -44,7 +44,7 @@ export function HotelCard({ hotel }: HotelCardProps) {
             <h3 className="font-bold text-lg">{hotel.name}</h3>
             <div className="flex items-center text-sm text-muted-foreground">
               <MapPin className="h-3.5 w-3.5 mr-1" />
-              <span>{hotel.location}</span>
+              <span><b>Elo Rating: </b>{Math.floor(Math.random() * 500) + 1200}</span>
             </div>
           </div>
           {hotel.average_rating !== undefined && (

@@ -46,5 +46,5 @@ class Attraction(models.Model):
     
 class UserRankings(models.Model):
     name = models.CharField(max_length=255)
-    eloRating = models.FloatField()
+    elo_rating = models.FloatField()
     ranking = models.IntegerField()

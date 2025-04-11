@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
 from traveloa.models import Hotel, Attraction
+import random
 
 class Command(BaseCommand):
     help = "Load sample hotel and attraction data into the database"
