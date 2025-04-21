@@ -17,7 +17,7 @@
 
 ## Technologies Used
 
-- **Python** (primary backend language)
+- **Django** (primary backend language)
 - **HTML, CSS, JavaScript, TypeScript** (frontend)
 - **PowerShell** (for scripting/automation)
 - Frameworks and libraries as included in the project
@@ -49,6 +49,7 @@
 3. **Install Python dependencies:**
     ```bash
     pip install -r requirements.txt
+    pip install django
     ```
     *(If `requirements.txt` is present; otherwise, install dependencies as needed.)*
 
