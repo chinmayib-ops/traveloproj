@@ -85,9 +85,3 @@ travelo/
 5. Open a pull request
 
 ---
-
-## License
-
-This project is for educational and demonstration purposes.
-
-Answer from Perplexity: pplx.ai/share
